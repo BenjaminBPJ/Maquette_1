@@ -358,7 +358,7 @@ h1{
 
 .emote-valise{
     color: white;
-    background-image: url(image/1941.jpg);
+    background-color: #0e0506;
     position: relative;
     z-index: 2;
     padding: 1em;
@@ -401,5 +401,198 @@ h1{
 .emote-right{
     border: none;
 }
+
+/* ---- Mise en page actualités------ */
+/*titre actu */
+.titre-actu{
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+.emote-actu{
+    color : #0082f4;
+    text-align: center;
+}
+/* bloc actu */
+.bloc-actus{
+    display: flex;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fleche-actu{
+    color: #0082f4;
+    align-self: center;
+    padding-right: 1em;
+}
+
+.actu-principal-photo{
+    display: flex;
+    flex : 4 1 0;
+}
+
+.actu-principal{
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    padding-top: 0;
+    box-shadow: 0.5em 0.5em 4em #BDBDBD;
+    border-radius: 0 25px 25px 25px;
+    margin-right: 3em;
+    z-index: 1;
+    position: relative;
+    left : -2em;
+}
+.photo-actu{
+    width: 40%;
+    height: 70%;
+    border-radius: 25px;
+    z-index: 2;
+}
+
+.date-actu{
+    color: #0082f4;
+}
+
+.toute-actu{
+    font-size: 0.9em;
+    display: flex;
+    margin: auto;
+}
+
+.plus-actu{
+    color: #0082f4;
+    align-self: center;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 50%;
+}
+
+.voir-tout{
+    color: white;
+    background-color: #0082f4;
+    border-radius: 100px;
+    padding: 0.3em;
+    margin-left: 2em;
+}
+
+.partage{
+    display: flex;
+    color: grey;
+    margin-left: auto;
+}
+
+.texte-partage{
+    margin-right: 1em;
+    padding-right: 1em;
+    border-right: grey solid 1px;
+}
+.emote-actus{
+    padding: 0.2em;
+    align-self: center;
+}
+
+/* aside actu */
+.aside-actu{
+    padding-left: 2em;
+    padding-top: 0;
+    flex: 1 1 0;
+    border-left: solid 2px grey;
+}
+
+.titre-aside-actu{
+    color: #0082f4;
+    border: solid 1px #0082f4;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.texte-aside-actu{
+    font-size: 0.7em;
+    padding-top: 1em;
+}
+
+/* ---- Mise en page du Footer------ */
+footer{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 5em;
+}
+
+.logo-footer{
+    height: 10em;
+    margin-right: 3em;
+}
+
+.adresse-logo{
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+h5{
+    color: grey;
+}
+
+.colonne-footer{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.ul-footer{
+    border-right: solid 2px #0082f4;
+    padding-right: 3em;
+    list-style: none;
+    padding-left: 0;
+}
+
+.sous-li{
+    padding-left: 1em;
+}
+
+/* nav-barre de droite */
+.nav-footer{
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    font-weight: bold;
+}
+.nav-actu-blog-reseau{
+    font-size: 0.8em;
+    display: flex;
+    padding-top: 5em;
+}
+
+.ul-actu-blog-reseau{
+    list-style: none;
+}
+
+.li-actublog{
+    display: flex;
+}
+
+.emote-footer-actublog{
+    align-self: center;
+    padding-right: 1em;
+}
+
+.detail-actublog{
+    color: white;
+    background-color: #0082f4;
+    padding: 0.2em;
+    border-radius: 100px;
+}
+
+.ul-reseau-footer{
+    list-style: none;
+    display: flex;
+}
+
+.emote-reseau-footer{
+    padding-right: 1em;
+}
+
 
 
