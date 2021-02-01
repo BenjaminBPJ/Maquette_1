@@ -1,0 +1,328 @@
+@font-face{
+    font-family: 'lato';
+    src:url('police/Lato-Regular.ttf');  
+}
+
+*, ::before ::after {
+    box-sizing : border-box;
+    margin : 0;
+    padding : 0;
+}
+
+body{
+    font-family: 'lato';
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---- Mise en page header ------ */
+.top-header{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-header{
+    height: 10em;
+    background-color: white;
+    padding: 1em;
+    border-radius: 0 0 25px 25px;
+    position: relative;
+    top: -1em;
+    z-index: 2;
+    margin-bottom: -3%;
+    box-shadow: 0.5em 0.5em 4em black;
+}
+.nav-header{
+    font-size: 0.8em;
+    font-weight: bold;
+    position: absolute;
+    top : 0;
+    right: 8.5%;
+}
+
+.ul-nav-header{
+    display: flex;
+    list-style: none;
+}
+
+.li-header{
+    display: flex;
+}
+
+.emote-header{
+    display: flex;
+    padding-right: 1em;
+    align-items: center;
+}
+
+.li-blog{
+    padding-left: 2em;
+}
+
+/* ---- Mise en page element principal ------ */
+.article-principal{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(image/pexels-christina-morillo-1181605.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 15%;
+    padding-bottom: 12%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: -5%;
+    z-index: 1;
+}
+/* Nav coté gauche */
+.nav-candidat{
+    margin-left: -6%;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+    border: white solid 1px;
+    border-radius : 0 3% 3% 0;
+    padding: 1em;
+}
+
+.ul-nav-candidat{
+    list-style: none;
+}
+
+.entreprise-nav{
+    border-top: 0.1em solid #37474F;
+    border-bottom: 0.1em solid #37474F;
+    padding: 1em 0 1em 0;
+}
+
+.agences-nav{
+    padding-top: 1em;
+}
+.emote-nav-princiapal{
+    color: white;
+    background-color: #0082f4;
+    border-radius: 50%;
+    padding: 0.7em;
+}
+
+/* Titre du site */
+.header-principal{
+    text-align: center;
+    width: 40%;
+}
+
+h1{
+    font-size: 2.6em;
+    font-weight: lighter;
+    margin-bottom: 1em;
+}
+.sous-titre{
+    color: white;
+    background-color:#0082f4;
+    padding: 0.1em 0.7em  0.1em 0.7em ;
+    border-radius: 0 25px 0 25px;
+}
+
+.categorie-client{
+    display: flex;
+}
+
+.sous-categorie{
+    flex-direction: column;
+}
+
+.h2-principal{
+    font-size: 1.2em;
+    border : 1px solid #0082f4;
+}
+
+.h2-principal-candidat{
+    border-radius: 50px 0 0 0;
+    padding: 0.6em 0 2.2em 0.3em;
+    border-right: none;
+}
+
+.h2-principal-entreprise{
+    border-radius: 0 0 50px 0;
+    padding: 0.6em 0.3em 2.2em 0;
+}
+
+.h3-principal{
+    color: #0082f4;
+    background-color: black;
+    position: relative;
+    bottom: 2em;
+    width: 40%;
+}
+
+.h3-principal-candidat{
+    padding:0.5em  2em 0.5em 2em;
+    border-radius: 100px 0 0 100px ;
+    margin-left: auto;
+}
+
+.h3-principal-entreprise{
+    border-left: 1px solid #0082f4;
+    margin-right: auto;
+    padding:0.5em 2em 0.5em 2em;
+    border-radius: 0 100px 100px 0 ;
+}
+
+/* Inscription et nav réseau */
+.inscription-reseau{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inscription{
+    margin-top : 60%;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    display: flex;
+    font-weight: bold;
+    padding-left: 1em;
+    align-items: center;
+    color: white;
+    background-color:#0082f4;
+    border-radius: 100px 0 0 100px;
+    position: relative;
+    z-index: 2;
+    margin-right: -20%;
+    box-shadow: 0.5em 0.5em 4em black;
+}
+
+.emote-inscription{
+    padding-right: 1em;
+}
+
+.ul-header-reseau{
+    position: absolute;
+    list-style: none;
+    color: #0082f4;
+    bottom: 2em;
+}
+
+.emote-reseau-header{
+    padding: 0.2em;
+}
+
+/* ---- Mise en page Dernières offres ------ */
+/* Titre de la rubrique offre */
+.header-offre{
+    position: relative;
+    z-index: 2;
+    margin-top: -5%;
+    text-align: center;
+}
+
+.hp{
+    position: relative;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 50%;
+    color: #0082f4;
+    margin-bottom: -1%;
+    z-index: 3;
+}
+
+.titre-offre{
+    position: relative;
+    background-color: white;
+    border-radius: 25px;
+    padding: 1.3em;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -0.5%;
+    z-index: 2;
+}
+
+.soulignement-bleu{
+    border-bottom: solid 0.2em  #0082f4;
+    padding-bottom: 1em;
+}
+
+/* Carte des offres */
+.bloc-offre{
+    display: flex;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    text-align: center;
+}
+.fleche{
+    color : #0082f4;
+    padding: 1em;
+}
+
+.carte-offre{
+    border-radius: 25px;
+    box-shadow: 0.5em 0.5em 4em #BDBDBD;
+    margin: 1em;
+}
+
+.date-offre{
+    color:  #0082f4;
+}
+
+.descri-offre{
+    padding : 1em 2em 1em 2em;
+}
+
+.lieu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0082f4;
+    border-radius: 25px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.lieu-offre{
+    padding-right: 1em;
+}
+
+.quand{
+    width: 35%;
+}
+
+.calendrier{
+    padding-right: 1em;
+}
+
+.ajout-offre{
+    color :  #0082f4;
+    padding-bottom: 1em;
+}
+/* sous partie des offres */
+.decouverte-offre{
+    text-align: center;
+}
+
+.autre-offre{
+    font-size: 1.1em;
+    color: #0082f4;
+    border : solid 0.1em  #0082f4;
+    border-radius: 25px;
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*.sous-partie-decou{
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: #0082f4;
+}*/
+
+/*.decou-contrat{
+    padding-right: 2em;
+    border-right: solid white 1px;
+}*/
