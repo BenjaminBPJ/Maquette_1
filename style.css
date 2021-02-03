@@ -71,9 +71,10 @@ body{
     padding-bottom: 12%;
     margin-left: 8%;
     margin-right: 8%;
-    margin-top: -5%;
+    margin-top: -3%;
     z-index: 1;
 }
+
 /* Nav coté gauche */
 .nav-candidat{
     margin-left: -6%;
@@ -81,8 +82,8 @@ body{
     font-weight: bold;
     background-color: white;
     border: white solid 1px;
-    border-radius : 0 3% 3% 0;
-    padding: 1em;
+    border-radius : 0 25px 25px 0;
+    padding: 0.5em;
 }
 
 .ul-nav-candidat{
@@ -98,6 +99,7 @@ body{
 .agences-nav{
     padding-top: 1em;
 }
+
 .emote-nav-princiapal{
     color: white;
     background-color: #0082f4;
@@ -244,20 +246,25 @@ h1{
 }
 
 /* Carte des offres */
-.bloc-offre{
+/* slide */
+.slide{
+    padding: 0 5% 0 5%;
+    overflow: hidden;
     display: flex;
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
+}
+.bloc-offre{
+    margin: 0 auto;
     text-align: center;
 }
 .fleche{
     color : #0082f4;
     padding: 1em;
     align-self: center;
+    cursor: pointer;
 }
-
+.fleche-gauche-offre{
+    display: none;
+}
 .carte-offre{
     border-radius: 25px;
     box-shadow: 0.5em 0.5em 4em #BDBDBD;
@@ -354,18 +361,6 @@ h1{
     position: relative;
     padding-bottom: 2em;
     z-index: 1;
-}
-
-.emote-valise{
-    color: white;
-    background-color: #0e0506;
-    position: relative;
-    z-index: 2;
-    padding: 1em;
-    border-radius: 50%;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .titre-secteur{
@@ -583,6 +578,7 @@ h5{
     background-color: #0082f4;
     padding: 0.2em;
     border-radius: 100px;
+    text-align: center;
 }
 
 .ul-reseau-footer{
@@ -594,5 +590,70 @@ h5{
     padding-right: 1em;
 }
 
+/* ------------- Animations ------------- */
+.zoom:hover {
+    animation-name : zoom;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    transform: scale(1);
+}
 
+@keyframes zoom{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);            
+    }
+    70%{
+        transform: scale(1.5)
+    }
+    100%{
+        transform: scale(1);            
+    }
+}
+
+.zoom-inscri:hover {
+    animation-name : zoom-inscri;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    transform: scale(1);
+}
+
+@keyframes zoom-inscri{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);            
+    }
+    70%{
+        transform: scale(1.2)
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+
+.carte-offre:hover{
+    transform: scale(1.04);
+}
+
+.black-color:hover {
+    transition: 1s;
+    color : black;
+    background-color:  #0082f4 ;
+}
+
+.blue-color:hover {
+    transition: 1.2s;
+    color : white;
+    background-color:  #0082f4 ;
+}
+
+.white-color:hover {
+    transition: 1s;
+    color :  #0082f4;
+    background-color: white ;
+}
 
