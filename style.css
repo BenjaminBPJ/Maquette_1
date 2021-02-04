@@ -37,7 +37,7 @@ body{
     font-weight: bold;
     position: absolute;
     top : 0;
-    right: 8.5%;
+    right: 5.5%;
 }
 
 .ul-nav-header{
@@ -69,16 +69,18 @@ body{
     background-position: center;
     padding-top: 15%;
     padding-bottom: 12%;
-    margin-left: 8%;
-    margin-right: 8%;
-    margin-top: -3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: -4%;
     z-index: 1;
 }
 
 /* Nav coté gauche */
 .nav-candidat{
+    display: flex;
     margin-left: -6%;
     text-align: center;
+    align-items: center;
     font-weight: bold;
     background-color: white;
     border: white solid 1px;
@@ -245,8 +247,7 @@ h1{
     padding-bottom: 1em;
 }
 
-/* Carte des offres */
-/* slide */
+/* Slide Carte des offres */
 .slide{
     padding: 0 5% 0 5%;
     overflow: hidden;
@@ -265,9 +266,11 @@ h1{
 .fleche-gauche-offre{
     display: none;
 }
+
+/* Carte des offres */
 .carte-offre{
     border-radius: 25px;
-    box-shadow: 0.5em 0.5em 4em #BDBDBD;
+    box-shadow: 0.2em 0.2em 1em #BDBDBD;
     margin: 1em;
 }
 
@@ -285,11 +288,12 @@ h1{
     justify-content: center;
     background-color: #0082f4;
     border-radius: 25px;
-    width: 25%;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
     color: white;
     margin-bottom: 1em;
+    padding: 0 1em 0 1em;
 }
 
 .lieu-offre{
@@ -297,7 +301,7 @@ h1{
 }
 
 .quand{
-    width: 35%;
+    width: 40%;
 }
 
 .calendrier{
@@ -328,7 +332,7 @@ h1{
     display: flex;
     justify-content: center;
     background-color: #0082f4;
-    width: 30%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 100px;
@@ -354,7 +358,7 @@ h1{
 .secteur-activite{
     background-image: url(image/1941.jpg);
     background-repeat: no-repeat;
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5em;
@@ -445,6 +449,7 @@ h1{
     height: 70%;
     border-radius: 25px;
     z-index: 2;
+    box-shadow: 0.5em 0.5em 4em #BDBDBD;
 }
 
 .date-actu{
@@ -469,7 +474,7 @@ h1{
     color: white;
     background-color: #0082f4;
     border-radius: 100px;
-    padding: 0.3em;
+    padding: 0.5em;
     margin-left: 2em;
 }
 
@@ -512,7 +517,6 @@ h1{
 /* ---- Mise en page du Footer------ */
 footer{
     display: flex;
-    width: 80%;
     margin: auto;
     margin-top: 5em;
 }
@@ -613,28 +617,6 @@ h5{
     }
 }
 
-.zoom-inscri:hover {
-    animation-name : zoom-inscri;
-    animation-duration: 1.2s;
-    animation-fill-mode: forwards;
-    transform: scale(1);
-}
-
-@keyframes zoom-inscri{
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.2);            
-    }
-    70%{
-        transform: scale(1.2)
-    }
-    100%{
-        transform: scale(1)
-    }
-}
-
 .carte-offre:hover{
     transform: scale(1.04);
 }
@@ -657,3 +639,363 @@ h5{
     background-color: white ;
 }
 
+@media screen and (max-width:1590px){
+    /* titre-principal */
+    .article-principal{
+        font-size: 0.9em;
+        margin-top: -5%;
+    }
+    .autre-offre{
+        width: 20%;
+        padding: 0.3em;
+    }
+}
+
+@media screen and (max-width:1431px){
+    /* titre-principal */
+    .logo-header{
+        height: 8em;
+    }
+    .header-principal{
+        width: 50%;
+    }
+    .h2-principal{
+        padding-top: 1em;
+    }
+    .header-offre{
+        margin-top: -6%;
+    }
+    .hp{
+        margin-bottom: -2%;
+    }
+    /* derniere offre */
+    .carte-offre{
+        width: 30%;
+    }
+    .quand{
+        width: 50%;
+    }
+    /* actus */
+    .bloc-actus{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1160px){
+    /* titre-principal */
+    .nav-candidat{
+        font-size: 0.8em;
+        align-self: center;
+    }
+    .article-principal{
+        margin-top: -6%;
+    }
+    .header-principal{
+        width: 60%;
+    }
+    /* derniere offre */
+    .header-offre{
+        margin-top: -7%;
+    }
+    .hp{
+        margin-bottom: -3%;
+    }
+    .quand{
+        width: 55%;
+    }
+    footer{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width:965px){
+    /* titre-principal */
+    body{
+        font-size: 0.9em;
+    }
+    .logo-header{
+        height: 7em;
+    }
+    /* derniere offre */
+    .sous-partie-decou{
+        width: 50%;
+    }
+    /* fotter */
+    .colonne-footer{
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    .ul-footer{
+        padding-right: 0.5em;
+    }
+}
+
+@media screen and (max-width:900px){
+    /* titre-principal */
+    .article-principal{
+        flex-direction: column;
+    }
+    .nav-candidat{
+        border-radius: 25px;
+        margin-left: -10%;
+        margin-right: auto;
+        margin-top: 0;
+    }
+    .header-principal{
+        margin: auto;
+        margin-top: -30%;
+    }
+    .inscription{
+        z-index: 1;
+        margin-top: 0;
+        width: 20%;
+        margin-right: -1em;
+        margin-left: auto;
+    }
+    /* derniere offre */
+    .header-offre{
+        margin-top: -8%;
+    }
+}
+
+@media screen and (max-width:875px){
+    /* titre-principal */
+    .article-principal{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .header-principal{
+        font-size: 0.8em;
+    }
+    .nav-candidat{
+        margin-left: -5%;
+    }
+    /* derniere offre */
+    .header-offre{
+        margin-top: -8%;
+    }
+    .image-secteur{
+        flex-wrap: wrap;
+    }
+    .image-secteur-bis{
+        flex-wrap: wrap;
+    }
+    .logo-footer{
+        margin-right: 0.5em;
+    }
+}
+
+@media screen and (max-width:790px){
+    /* derniere offre */
+    .header-offre{
+        margin-top: -10%;
+    }
+    /* actu */
+    .bloc-actus{
+        flex-direction: column;
+    }
+    .actu-principal-photo{
+        flex: none;
+        margin-bottom: 2em;
+    }
+    .actu-principal{
+        margin-right: 0;
+    }
+    .photo-actu{
+        height: 90%;
+    }
+    .aside-actu{
+        border: none;
+        text-align: center;
+    }
+    .texte-aside-actu{
+        font-size: 1em;
+    }
+    /* footer */ 
+    .nav-actu-blog-reseau{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:670px){
+    /* titre-principal */
+    .article-principal{
+        margin-top: -10%;
+    }
+    .h2-principal{
+        padding: 1em;
+    }
+    .nav-candidat{
+        margin-left: -7%;
+    }
+    /* derniere offre */
+    .header-offre{
+        margin-top: -12%;
+    }
+    .souli-der-offre{
+        border:none;
+    }
+    .souli-media-offre{
+        border-bottom: solid 2px #0082f4;
+    }
+}
+
+@media screen and (max-width:630px){
+    .nav-header{
+        right: 1%;
+    }
+    /* titre-principal */
+    .nav-candidat{
+        display: none;
+    }
+    .header-principal{
+        margin-top: auto;
+        width: 75%;
+    }
+}
+
+/* ----------- Positionnement pour version mobile -------------*/
+@media screen and (max-width:545px){
+    /* Header */
+    .top-header{
+        flex-direction: column;
+        position: relative;
+    }
+    .logo-header{
+        top :0;
+        z-index: 0;
+        margin: auto;
+        box-shadow: none;
+    }
+    .nav-header{
+        position: relative;
+        z-index: 0;
+        margin: auto;
+    }
+
+    /* article principal */
+    .article-principal{
+        z-index: 0;
+        top: 0;
+        margin: auto;
+    }
+
+    .article-principal{
+        padding-top: 2em;
+    }
+
+    .sous-titre{
+        font-size: 0.7em;
+    }
+
+    .inscription{
+        z-index: 0;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        border-radius: 0;
+    }
+
+    .ul-header-reseau{
+        position: relative;
+        display: flex;
+        z-index: 0;
+        margin: auto;
+        bottom: 0;
+        margin-top: 1em;
+    }
+
+    /* Dernières offres */
+    .article-offre{
+        font-size: 0.9em;
+    }
+    .hp{
+        display: none;
+    }
+    .header-offre{
+        margin-top: -5%;
+    }
+    .titre-offre{
+        z-index: 0;
+        margin: auto;
+        font-size: 1.2em;
+    }
+    .slide{
+        flex-direction: column;
+    }
+    .carte-offre{
+        margin: auto;
+        width: 100%;
+        font-size: 0.9em;
+    }
+    .quand{
+        width: 40%;
+    }
+    .sous-partie-decou{
+        width: 100%;
+        border-radius: 0;
+        text-align: center;
+        padding: 0.2em;
+    }
+
+    /* Secteur */
+    .souli-secteur{
+        border: none;
+    }
+
+    /* Actus */
+    .titre-actu{
+        margin-top: 1em;
+    }
+    .photo-actu{
+        max-width: 30%;
+    }
+    .actu-principal{
+        padding-right: 1em;
+    }
+    .aside-actu{
+        padding: 0;
+    }
+    .voir-tout{
+        text-align: center;
+    }
+
+    /* Footer */
+    footer{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .ul-footer{
+        border: none;
+    }
+
+    .nav-footer{
+        margin: auto;
+    }
+
+    .ul-actu-blog-reseau{
+        display: flex;
+    }
+
+    .ul-actu-blog-reseau li{
+        margin-top: 0;
+        margin-right: 2em;
+        text-align: center;
+        align-items: center;
+    }
+
+    .detail-actublog{
+        align-self: center;
+        padding: 0.5em;
+    }
+    .ul-reseau-footer{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:465px){
+    .article-principal{
+        font-size: 0.8em;
+    }
+}
