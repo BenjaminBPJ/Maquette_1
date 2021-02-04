@@ -421,18 +421,15 @@ h1{
     margin-right: auto;
 }
 
-.fleche-actu{
-    color: #0082f4;
-    align-self: center;
-    padding-right: 1em;
-}
-
 .actu-principal-photo{
     display: flex;
     flex : 4 1 0;
 }
 
 .actu-principal{
+    position: relative;
+    z-index: 1;   
+    left : -2em;
     display: flex;
     flex-direction: column;
     padding: 3em;
@@ -440,9 +437,6 @@ h1{
     box-shadow: 0.5em 0.5em 4em #BDBDBD;
     border-radius: 0 25px 25px 25px;
     margin-right: 3em;
-    z-index: 1;
-    position: relative;
-    left : -2em;
 }
 .photo-actu{
     width: 40%;
@@ -923,7 +917,7 @@ h5{
         flex-direction: column;
     }
     .carte-offre{
-        margin: auto;
+        margin: auto 1em 1em 0;
         width: 100%;
         font-size: 0.9em;
     }
@@ -941,6 +935,9 @@ h5{
     .souli-secteur{
         border: none;
     }
+    .image-secteur-bis{
+        display: none;
+    }
 
     /* Actus */
     .titre-actu{
@@ -950,6 +947,7 @@ h5{
         max-width: 30%;
     }
     .actu-principal{
+        left: 0;
         padding-right: 1em;
     }
     .aside-actu{
@@ -974,6 +972,9 @@ h5{
         margin: auto;
     }
 
+    .nav-actu-blog-reseau{
+        padding-top: 1em;
+    }
     .ul-actu-blog-reseau{
         display: flex;
     }
