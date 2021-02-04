@@ -911,10 +911,12 @@ h5{
     .titre-offre{
         z-index: 0;
         margin: auto;
+        margin-top: 1;
         font-size: 1.2em;
     }
     .slide{
         flex-direction: column;
+        padding-top: 1.5em;
     }
     .carte-offre{
         margin: auto 1em 1em 0;
@@ -962,6 +964,7 @@ h5{
         flex-direction: column;
         width: 100%;
         text-align: center;
+        margin-top: 1em;
     }
 
     .ul-footer{
